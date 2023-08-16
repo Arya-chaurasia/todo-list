@@ -109,3 +109,44 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
 }
+
+
+/* For screens up to 540px (same as max-width of .todo-app) */
+@media (max-width: 540px) {
+    .todo-app {
+        margin: 50px auto 20px;
+        padding: 30px 20px 60px;
+    }
+    .row {
+        padding-left: 15px;
+        margin-bottom: 15px;
+    }
+    input {
+        padding: 8px;
+    }
+    button {
+        padding: 14px 40px;
+        font-size: 14px;
+    }
+    ul li {
+        font-size: 16px;
+        padding: 10px 8px 10px 40px;
+    }
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 10px;
+        left: 6px;
+    }
+    ul li span {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+
+/* For screens up to 768px */
+@media (max-width: 768px) {
+    .todo-app {
+        padding: 20px 15px 50px;
+    }
+}
